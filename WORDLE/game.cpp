@@ -132,6 +132,9 @@ void Game::drawEndGameScreen()
 {
 	sf::Text endGameText = assets.getEndGameText();
 	sf::Text restartText = assets.getRestartText();
+	sf::Text correctWordText = assets.getCorrectWordText();
+	correctWordText.setString(wordToGuess);
+
 	switch (gameStatus)
 	{
 	case WON :
@@ -145,22 +148,29 @@ void Game::drawEndGameScreen()
 	default :
 		break;
 	}
+
 	
+	
+	// text will be visible on top of this box
 	sf::RectangleShape endGameBackground;
 	endGameBackground.setFillColor(sf::Color(64, 64, 64));
 
+	//center all texts and the background box
 	sf::FloatRect restartTextRect = restartText.getLocalBounds();
 	sf::FloatRect endGameTextRect = endGameText.getLocalBounds();
+	sf::FloatRect correctWordTextRect = correctWordText.getLocalBounds();
 	
-	endGameBackground.setSize(sf::Vector2f(restartTextRect.width * 1.1, endGameTextRect.height * 2.2 + restartTextRect.height));
+	endGameBackground.setSize(sf::Vector2f(restartTextRect.width * 1.1, endGameTextRect.height * 2.2 + restartTextRect.height + correctWordTextRect.height));
 	endGameBackground.setPosition(sf::Vector2f(
 		sfmlObjects.getWindowWidth() / 2- endGameBackground.getSize().x / 2,
 		sfmlObjects.getWindowHeight() / 2 - endGameBackground.getSize().y / 2));
 
 	assets.centerTextXByShape(endGameText, endGameBackground);
 	assets.centerTextXByShape(restartText, endGameBackground);
+	assets.centerTextXByShape(correctWordText, endGameBackground);
 	endGameText.setPosition(sf::Vector2f(endGameText.getPosition().x, endGameBackground.getPosition().y));
-	restartText.setPosition(sf::Vector2f(restartText.getPosition().x, endGameBackground.getPosition().y + endGameTextRect.height + 25));
+	correctWordText.setPosition(sf::Vector2f(correctWordText.getPosition().x, endGameBackground.getPosition().y + endGameTextRect.height + 5));
+	restartText.setPosition(sf::Vector2f(restartText.getPosition().x, endGameBackground.getPosition().y + endGameTextRect.height + correctWordTextRect.height + 25));
 
 	//draw whole endGameWindow to update colors
 	//which would normally be updated in the end part of the main loop
@@ -170,6 +180,7 @@ void Game::drawEndGameScreen()
 	sfmlObjects.getWindow()->draw(endGameBackground);
 	sfmlObjects.getWindow()->draw(endGameText);
 	sfmlObjects.getWindow()->draw(restartText);
+	sfmlObjects.getWindow()->draw(correctWordText);
 	sfmlObjects.getWindow()->display();
 
 	//wait for any user input to start new game

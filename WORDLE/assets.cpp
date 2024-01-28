@@ -43,6 +43,11 @@ void Assets::loadAssets()
 	background.rect.setPosition(background.position);
 	background.rect.setFillColor(background.color);
 
+	//correct word text
+	correctWord.text.setCharacterSize(correctWord.characterSize);
+	correctWord.text.setFont(titleFont.font);
+	correctWord.text.setFillColor(correctWord.color);
+
 
 }
 
@@ -83,5 +88,6 @@ std::vector<std::string> * Assets::getValidWords() { return validWords; }
 
 sf::Text& Assets::getEndGameText() { return endGameText.text; }
 sf::Text Assets::getRestartText() { return restartText.text; }
+sf::Text& Assets::getCorrectWordText() { return correctWord.text; }
 
 sf::RectangleShape Assets::getBackgroundRect() { return background.rect; }

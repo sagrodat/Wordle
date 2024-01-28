@@ -47,6 +47,12 @@ private:
 		int characterSize = 25;
 	}restartText;
 
+	struct {
+		sf::Text text;
+		sf::Color color = sf::Color(sf::Color::White);
+		int characterSize = 50;
+	}correctWord;
+
 	////////// BACKGROUND PLANE /////////////////
 	struct {
 		sf::RectangleShape rect;
@@ -79,6 +85,7 @@ public :
 	std::vector<std::string> *getValidWords();
 	sf::Text& getEndGameText();
 	sf::Text getRestartText();
+	sf::Text&getCorrectWordText();
 	sf::RectangleShape getBackgroundRect();
 };
 inline Assets assets;

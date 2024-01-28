@@ -1,6 +1,48 @@
-﻿  Trwa generowanie kodu
-  0 of 407 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+﻿  game.cpp
+E:\INFORMATYKA\PROGRAMOWANIE\PROJEKTY\W trakcie\WORDLE\WORDLE\assets.hpp(61,93): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+E:\INFORMATYKA\PROGRAMOWANIE\PROJEKTY\W trakcie\WORDLE\WORDLE\assets.hpp(61,62): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+E:\INFORMATYKA\PROGRAMOWANIE\PROJEKTY\W trakcie\WORDLE\WORDLE\game.cpp(30,39): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+E:\INFORMATYKA\PROGRAMOWANIE\PROJEKTY\W trakcie\WORDLE\WORDLE\game.cpp(29,12): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+E:\INFORMATYKA\PROGRAMOWANIE\PROJEKTY\W trakcie\WORDLE\WORDLE\game.cpp(34,5): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+E:\INFORMATYKA\PROGRAMOWANIE\PROJEKTY\W trakcie\WORDLE\WORDLE\game.cpp(33,5): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+E:\INFORMATYKA\PROGRAMOWANIE\PROJEKTY\W trakcie\WORDLE\WORDLE\game.cpp(163,124): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+E:\INFORMATYKA\PROGRAMOWANIE\PROJEKTY\W trakcie\WORDLE\WORDLE\game.cpp(163,63): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+E:\INFORMATYKA\PROGRAMOWANIE\PROJEKTY\W trakcie\WORDLE\WORDLE\game.cpp(313,12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+  Trwa generowanie kodu
+  1 of 410 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   Zakończono generowanie kodu
   WORDLE.vcxproj -> E:\INFORMATYKA\PROGRAMOWANIE\PROJEKTY\W trakcie\WORDLE\x64\Release\WORDLE.exe
