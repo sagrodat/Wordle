@@ -10,7 +10,7 @@ In order to launch the game :
 The project was created using C++ (20) with help of the SFML (*Simple and Fast Media*) library. The IDE I used was Microsoft Visual Studio Community Edition.
 The end product works on the **Windows** operating system.
 ## Assets
-Fonts are free for all kinds of use and were downloaded from dafont.com
+Fonts are free for all purposes of use and were downloaded from dafont.com
 ## Features
 The user starts with 6 chances to guess a randomly chosen word from the list of words available in the resources (ForDistribution/resources/validwords.txt) folder.
 
